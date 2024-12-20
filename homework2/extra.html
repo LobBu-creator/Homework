@@ -5,10 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="extra.css">
-
     <title>CNIT 133 Homework 2 - Basic Operations</title>
 </head>
+<style>
+    h1 {
+        color: white;
+    }
+
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    td{
+        color: white;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    input[type="text"] {
+        color: black;
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    input[readonly] {
+        text-align: right;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
 <header>
     <nav>
         <ul>
@@ -40,28 +83,57 @@
         </ul>
     </nav>
 
-    <div class="calculator" style="margin-left: 37rem; margin-top: 3rem;">
-        <input type="text" id="display" disabled>
-        <div class="buttons">
-            <button onclick="appendNumber('1')">1</button>
-            <button onclick="appendNumber('2')">2</button>
-            <button onclick="appendNumber('3')">3</button>
-            <button onclick="appendOperator('+')">+</button>
-            <button onclick="appendNumber('4')">4</button>
-            <button onclick="appendNumber('5')">5</button>
-            <button onclick="appendNumber('6')">6</button>
-            <button onclick="appendOperator('-')">-</button>
-            <button onclick="appendNumber('7')">7</button>
-            <button onclick="appendNumber('8')">8</button>
-            <button onclick="appendNumber('9')">9</button>
-            <button onclick="appendOperator('*')">*</button>
-            <button onclick="appendNumber('0')">0</button>
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="calculateResult()">=</button>
-            <button onclick="appendOperator('/')">/</button>
-        </div>
-    </div>
+    <main>
+        <h1>Monetary Exchange Rates</h1>
+<button id="toggle-instructions">Click to Show/Hide Instructions</button>
+<p id="instructions" class="hidden" style="color: white;">The foreign exchange rates in June 2021. Enter a dollar amount in the table below to see the corresponding foreign exchange values.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Euro</td>
+            <td>0.84</td>
+            <td><input type="text" id="euro" readonly></td>
+        </tr>
+        <tr>
+            <td>Canadian Dollar</td>
+            <td>1.23</td>
+            <td><input type="text" id="cad" readonly></td>
+        </tr>
+        <tr>
+            <td>Hong Kong Dollar</td>
+            <td>7.76</td>
+            <td><input type="text" id="hkd" readonly></td>
+        </tr>
+        <tr>
+            <td>Japanese Yen</td>
+            <td>110.80</td>
+            <td><input type="text" id="jpy" readonly></td>
+        </tr>
+        <tr>
+            <td>Mexican Peso</td>
+            <td>19.82</td>
+            <td><input type="text" id="mxn" readonly></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Enter Amount of U.S. Dollars</td>
+            <td><input type="text" id="usd"></td>
+        </tr>
+    </tfoot>
+</table>
+    </main>
+ 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="h2extra.js"></script>
 </html>
