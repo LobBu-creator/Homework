@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CNIT 133 HOMEWORK</title>
+</head>
+<style>
+    h1, p {
+        color: white;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    #output {
+      margin-top: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 8 - AJAX Application</h1>
+    <nav>
+        <ul>
+            <li><a href="hw8.html">Main</a></li>
+            <li><a href="extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <div> 
+        <h1>GitHub Repository Viewer</h1>
+        <p>Enter a GitHub username below to view their public repositories:</p>
+        <input type="text" id="username" placeholder="Enter GitHub username" />
+        <button onclick="fetchRepositories()">Get Repositories</button>
+        <div id="output"></div>
+    </div>
+
+   <script src="extra.js"></script>
+</body>
+</html>

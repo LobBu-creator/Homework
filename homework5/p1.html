@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Homework 5 - Part 1</title>
+    <style>
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select,
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-bottom: 15px;
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #result {
+            margin-top: -20px;
+            text-align: center;
+            font-weight: bold;
+            color: red; /* Default error message color */
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 5 - Arrays</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+            <li><a href="p3.html">Part 3</a></li>
+        </ul>
+    </nav>
+
+<div>
+    <form id="userForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+
+        <label>Age Group:</label>
+        <div>
+            <input type="radio" id="ageGroup1" name="ageGroup" value="less than 21">
+            <label for="ageGroup1">Less than 21</label>
+        </div>
+        <div>
+            <input type="radio" id="ageGroup2" name="ageGroup" value="21-50">
+            <label for="ageGroup2">21-50</label>
+        </div>
+        <div>
+            <input type="radio" id="ageGroup3" name="ageGroup" value="older than 50">
+            <label for="ageGroup3">Older than 50</label>
+        </div>
+
+        <label>Browsers:</label>
+        <div>
+            <input type="checkbox" id="browser1" name="browser" value="Firefox">
+            <label for="browser1">Firefox</label>
+        </div>
+        <div>
+            <input type="checkbox" id="browser2" name="browser" value="Edge">
+            <label for="browser2">Edge</label>
+        </div>
+        <div>
+            <input type="checkbox" id="browser3" name="browser" value="Chrome">
+            <label for="browser3">Chrome</label>
+        </div>
+        <div>
+            <input type="checkbox" id="browser4" name="browser" value="Safari">
+            <label for="browser4">Safari</label>
+        </div>
+
+        <label for="movieType">Preferred Movie Type:</label>
+        <select id="movieType" required>
+            <option value="">Select a movie type</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Science Fiction">Science Fiction</option>
+        </select>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+    <script src="h5p1.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Homework 6 - Part 2</title>
+    <style>
+        h2, label {
+        color: white;
+        }
+
+        label, textarea, input, button {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 96%;
+            height: 150px;
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            width: 50px;
+            font-size: 16px;
+        }
+
+        #output {
+            width: 30%;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 6 - Objects</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+            <li><a href="p3.html">Part 3</a></li>
+        </ul>
+    </nav>
+   
+    <h2>Character Count in Content</h2>
+
+    <form id="searchForm">
+        <!-- Textarea for long content -->
+        <label for="content">Enter long content:</label>
+        <textarea id="content" placeholder="Type your content here..."></textarea>
+
+        <!-- Input for single character -->
+        <label for="char">Enter a single character to search:</label>
+        <input type="text" id="char" maxlength="1" placeholder="e.g., t">
+
+        <!-- Submit button -->
+        <button type="button" onclick="searchCharacter()">Submit</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="h6p2.js"></script>
+
+</body>
+</html>

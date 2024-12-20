@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5 - Part 3</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+        h2, label {
+            color: white;
+        }
+
+        label, textarea {
+            display: block;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        input[type="text"], button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #output {
+            width: 50%;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 5 - Arrays</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+            <li><a href="p3.html">Part 3</a></li>
+        </ul>
+    </nav>
+
+    <h2>State Information</h2>
+
+    <form id="stateForm">
+        <label for="stateInput">Enter a state name or abbreviation:</label>
+        <input type="text" id="stateInput" placeholder="e.g., CA or California">
+
+        <button type="button" onclick="getStateInfo()">State Info</button>
+        <button type="button" onclick="clearForm()">Clear Form</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="h5p3.js"></script>
+
+</body>
+</html>

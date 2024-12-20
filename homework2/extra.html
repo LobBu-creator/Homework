@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="extra.css">
+
+    <title>CNIT 133 Homework 2 - Basic Operations</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>   
+</header>
+<body>
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 50px;">CNIT 133 Homework 2 - Basic Operations</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+            <li><a href="extra.html">Extra Credit</a></li>
+        </ul>
+    </nav>
+
+    <div class="calculator" style="margin-left: 37rem; margin-top: 3rem;">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendOperator('+')">+</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendOperator('-')">-</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('*')">*</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendOperator('/')">/</button>
+        </div>
+    </div>
+
+</body>
+<script src="h2extra.js"></script>
+</html>

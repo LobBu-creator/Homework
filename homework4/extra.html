@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Hollow Square Generator</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: white;
+        }
+
+        #result {
+            color: red;
+            margin-top: 20px;
+            text-align: center;
+            font-family: monospace;
+            white-space: pre-wrap; /* Preserve whitespace for the square */
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input {
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 4 - Looping Statements</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+            <li><a href="extra.html">Extra Credit</a></li>
+        </ul>
+    </nav>
+
+    <h1>Hollow Square Generator</h1>
+
+    <form id="squareForm">
+        <label for="size">Enter a number (between 2 and 10): </label>
+        <input type="number" id="size" min="2" max="10" required>
+        <button type="button" onclick="generateSquare()">Generate Square</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+    </form>
+
+    <div id="result"></div>
+
+<script src="h4extra.js"></script>
+
+</body>
+</html>

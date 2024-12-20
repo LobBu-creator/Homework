@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CNIT 133 HOMEWORK</title>
+</head>
+<style>
+    h3, p {
+        color: white;
+    }
+</style>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 6 - Objects</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+            <li><a href="p3.html">Part 3</a></li>
+        </ul>
+    </nav>
+
+    <h3>Part 1</h3>
+    <p>This part processes user input from a web form, validates if it’s a number with at least four decimals, and performs calculations like rounding, square root, and formatting to various decimal places. Results are dynamically displayed on the page. A clearForm() function resets the input and output, allowing users to start fresh.</p>
+    <h3>Part 2</h3>
+    <p>This part defines a function, searchCharacter(), that searches for a specific character in a given text input and displays the results. It retrieves the text content and the character to search, ensuring the character is a single letter. If the input is invalid, an error message is shown. Otherwise, it converts both inputs to lowercase for case-insensitive comparison and counts how many times the character appears in the text.
+
+        If the character is found, the count is displayed on the webpage. If not, a new browser window opens with a message stating that the character was not found, and a button is provided to close the window. Additionally, the main output area on the webpage is cleared when the character is not found.</p>
+    <h3>Part 3</h3>
+    <p>This part uses jQuery to format a phone number input field and provides functions to validate and process the input. When the page is ready, a jQuery mask is applied to the phone input field to enforce the format (999) 999-9999.
+
+        The processPhoneNumber() function checks if the input matches this format using a regular expression. If valid, it extracts the area code, first three digits, and last four digits, populating respective fields. If the input is invalid, it clears these fields and displays an error message prompting the user to enter the correct format.
+        
+        The clearForm() function resets the phone input field, extracted values, and any displayed messages, allowing the form to be reused.</p>
+</body>
+</html>

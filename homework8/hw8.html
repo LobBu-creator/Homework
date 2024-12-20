@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>CNIT 133 HOMEWORK</title>
+</head>
+<style>
+    table,th,td {
+      background-color: aqua;
+      color: red;
+      border : 1px solid black;
+      border-collapse: collapse;
+    }
+    th,td {
+      padding: 5px;
+    }
+
+    h2, p, h3, li {
+        color: white;
+    }
+
+    .ref {
+  color: blue;         
+  text-decoration: none; 
+  font-size: 16px;     
+  font-weight: bold;   
+    }
+
+    .ref:hover:hover {
+  color: darkblue;       
+  text-decoration: underline; 
+    }
+
+    .ref:visited {
+    color: purple;      
+    }
+
+    .ref:active {
+    color: red;        
+    }
+
+
+    </style>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 8 - AJAX Application</h1>
+    <nav>
+        <ul>
+            <li><a href="hw8.html">Main</a></li>
+            <li><a href="extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <button type="button" onclick="loadDoc()">Get CD collection</button>
+        <br><br>
+        <table id="demo"></table>
+    </main>
+
+    <script src="hw8.js"></script>
+
+    <div>
+        <h2>Explanation of AJAX</h2>
+        <p>Web applications can update and retrieve data from a server asynchronously without reloading the entire page thanks to a technique called Asynchronous JavaScript and XML, or AJAX. AJAX is a collection of technologies rather than a programming language.</p>
+        <p>This code uses AJAX to retrieve and show XML data in an HTML table. The cd.xml file is loaded asynchronously by the loadDoc() function. It sends a GET request using the XMLHttpRequest object. The myFunction() function receives the response data from the onload event when the request is finished.
+
+          <br><br>   The responseXML property in myFunction() is used to parse the XML response into an XMLDocument object. The XML document's "CD" elements are then all retrieved by the code. Using a loop, it iterates through each "CD" element, extracting the text content of the "ARTIST" and "TITLE" child elements. It creates an HTML table beginning with a header row that contains "Artist" and "Title." In the table, these values are added as rows.</p>
+
+        <h2>Rest API</h2>
+        <p>A REST API (Representational State Transfer Application Programming Interface) is a way to interact with a system or service over HTTP. REST APIs follow a set of principles that make them lightweight, scalable, and easy to use. When you choose GitHub’s REST API, it allows you to programmatically interact with GitHub repositories, users, issues, pull requests, and more.</p>
+        <P>The GitHub REST API primarily returns data in JSON (JavaScript Object Notation) format</P>
+        <h3>Do You Need a Key to Access the API?</h3>
+        <ul>
+            <li>Yes, certain endpoints require authentication to access.
+                GitHub provides several methods for authentication:
+                <ol>
+                    <li>Personal Access Tokens (PAT):</li>
+                    <li>OAuth Tokens: Used for third-party integrations.</li>
+                    <li>GitHub Apps Authentication: For specific apps installed in GitHub organizations or user accounts.</li>
+                </ol>
+            </li>
+        </ul>
+        <ul>
+            <li>Some endpoints (like public user data) do not require authentication, but authenticated requests allow:
+                <ul>
+                    <li>Higher rate limits.</li>
+                    <li>Access to private repositories or user-specific data.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Do Companies Need to Pay Any Fee to Use the API?</h3>
+        <ul>
+            <li>Free for Basic Use:
+                GitHub’s REST API is free for most use cases, especially for personal and open-source projects.</li>
+            <li>Paid Features: Companies need to pay for GitHub Enterprise or GitHub Team plans to:
+                <ol>
+                    <li>Access private repositories.</li>
+                    <li>Use advanced features like Actions (CI/CD) or advanced security.</li>
+                    <li>Have higher limits on API calls and enterprise-level support.</li>
+                </ol>
+            </li>
+            <li>Charges for Rate Limit Increases:
+                <ol>
+                    <li>Free-tier: 60 requests per hour (unauthenticated), 5000 requests per hour (authenticated).</li>
+                    <li>Higher rate limits may be available for enterprise plans.</li>
+                </ol>
+            </li>
+        </ul>
+
+        <h3>Summary</h3>
+        <ul>
+            <li>Response Format: JSON.</li>
+            <li>Authentication: Required for most actions; tokens are used.</li>
+            <li>Fees: No fees for basic use; enterprise or team plans involve payment for private repos, advanced features, and rate-limit increases.</li>
+        </ul>
+
+        <h3>Here's the References to learn more about GitHub’s Rest API</h3>
+        <ul>
+            <li><a href="https://docs.github.com/en/rest?apiVersion=2022-11-28" class="ref">GitHub REST API Documentation</a></li>
+            <li><a href="https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28" class="ref">Rate Limits for the REST API</a></li>
+            <li><a href="https://github.com/pricing" class="ref">GitHub Pricing</a></li>
+            <li><a href="https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/rate-limits-for-github-apps" class="ref">Rate Limits for GitHub Apps</a></li>
+            <li><a href="https://docs.github.com/en/graphql/overview/rate-limits-and-node-limits-for-the-graphql-api" class="ref">Rate Limits and Node Limits for the GraphQL API</a></li>
+        </ul>
+    </div>
+        
+</body>
+</html>

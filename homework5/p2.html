@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Homework 5 - Part 2</title>
+    <style>
+        label {
+            color: white;
+        }
+        select, button {
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        #menu1, #menu2 {
+            width: 300px;
+        }
+
+        #menu2 {
+            margin-left: 21px;
+        }
+
+
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 5 - Arrays</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+            <li><a href="p3.html">Part 3</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <label for="menu1">Choose a website (onchange event):</label>
+        <select id="menu1" onchange="openInNewTabMenu1()">
+            <option value="">Select a website</option>
+            <option value="https://www.google.com">Google</option>
+            <option value="https://www.wikipedia.org">Wikipedia</option>
+            <option value="https://www.github.com">GitHub</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="menu2">Choose a website (onclick event):</label>
+        <select id="menu2">
+            <option value="">Select a website</option>
+            <option value="https://www.microsoft.com">Microsoft</option>
+            <option value="https://www.apple.com">Apple</option>
+            <option value="https://www.amazon.com">Amazon</option>
+        </select>
+        <button onclick="openInNewTabMenu2()">Go to selected website</button>
+    </div>
+
+    <script src="h5p2.js"></script>
+
+</body>
+</html>

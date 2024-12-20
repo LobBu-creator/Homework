@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Homework 7 - Part 1: Style Customizer</title>
+    <style>
+        main {
+            color: white;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #style-options {
+            margin: 10px;
+        }
+        
+        h3,label {
+            color: white;
+        }
+
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        input, select {
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .output-area {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Go back to Main Page</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 style="color: black;background-color: aquamarine; text-align: center; margin: auto;">CNIT 133 Homework</h1>
+    <nav>
+        <ul>
+            <li><a href="../homework2/hw2.html">Homework 2</a></li>
+            <li><a href="../homework3/hw3.html">Homework 3</a></li>
+            <li><a href="../homework4/hw4.html">Homework 4</a></li>
+            <li><a href="../homework5/hw5.html">Homework 5</a></li>
+            <li><a href="../homework6/hw6.html">Homework 6</a></li>
+            <li><a href="../homework7/hw7.html">Homework 7</a></li>
+            <li><a href="../homework8/hw8.html">Homework 8</a></li>
+            <li><a href="../extra/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="color: black;background-color: green; text-align: center; margin: auto; margin-top: 30px;">Homework 7 - Object Model and Event Model</h1>
+    <nav>
+        <ul>
+            <li><a href="p1.html">Part 1</a></li>
+            <li><a href="p2.html">Part 2</a></li>
+        </ul>
+    </nav>
+   
+
+    <main id="content-area">
+        <p>This is the first paragraph. The styles you choose will be applied here.</p>
+        <p>This is the second paragraph. You can change the background color, text style, and font size.</p>
+        <p>This is the third paragraph. Enjoy customizing the look of this text!</p>
+    </main>
+
+    <div id="style-options">
+        <h3>Customize Text Style</h3>
+        <form>
+            <label for="bg-color">Background Color:</label>
+            <input type="radio" id="bg-color1" name="bg-color" value="lightblue">
+            <label for="bg-color1">Light Blue</label>
+            <input type="radio" id="bg-color2" name="bg-color" value="lightgreen">
+            <label for="bg-color2">Light Green</label>
+
+            <br><br>
+            
+            <input type="checkbox" id="bold" name="style" value="bold">
+            <label for="bold">Bold</label>
+            <input type="checkbox" id="italic" name="style" value="italic">
+            <label for="italic">Italic</label>
+            <input type="checkbox" id="underline" name="style" value="underline">
+            <label for="underline">Underline</label>
+
+            <br><br>
+
+            <label for="font-size">Font Size:</label>
+            <select id="font-size">
+                <option value="1rem">Small</option>
+                <option value="1.5rem">Medium</option>
+                <option value="2rem">Large</option>
+            </select>
+        </form>
+    </div>
+
+    <script src="h7p1.js"></script>
+
+</body>
+</html>
