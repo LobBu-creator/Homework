@@ -1,10 +1,8 @@
 $(document).ready(function () {
-    // Show/Hide Instructions
     $('#toggle-instructions').click(function () {
         $('#instructions').toggleClass('hidden');
     });
 
-    // Highlight USD input on focus
     $('#usd').focus(function () {
         $(this).css('background-color', '#ffffcc');
     });
@@ -13,7 +11,6 @@ $(document).ready(function () {
         $(this).css('background-color', '');
     });
 
-    // Calculate exchange rates
     $('#usd').on('input', function () {
         const usdAmount = parseFloat($(this).val());
 
